@@ -1,0 +1,31 @@
+.booking-form-box
+{
+   max-width:350px;
+   border: 1px solid white;
+   margin: 10% auto 0;
+   text-align: center;
+   }
+   .radio-btn
+   {
+    margin: 0 20px;
+   }
+   .radio-btn .btn
+   {
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+   }
+   .radio-btn .btn:after
+   {
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border: 3px solid white;
+    visibility: visible;
+    border-radius: 50%;
+
+   }
