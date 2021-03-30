@@ -29,122 +29,54 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-
-.container .books
+.mix
 {
-  position: relative;
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
+  height: 250px;
+  width: 200px;
 }
-
-.container .books .box
+.beauty h5
 {
-  position: relative;
-  width: 275px;
-  height: 275px;
-  overflow: hidden;
-  transition: 0.5s;
+  color: red;
 }
-
-.container .books .box:hover
+.beauty p
 {
-z-index: 1;
-transform: scale(1.25);
-box-shadow: 0 25px 40px rgba(0,0,0,.5);
+  color: white;
 }
-
-.container .books .box .imgbox
-{
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Set a style for all buttons */
+/*button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
   width: 100%;
-  height: 100%;
+  opacity: 0.9;
 }
 
-.container .books .box .imgbox:before
-{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(180deg,#f00,#000);
-  mix-blend-mode: multiply;
-  transition: 0.5s;
-  opacity: 0;
+button:hover {
+  opacity:1;
+}*/
 
-}
-.container .books .box:hover .imgbox:before
-{
-  opacity: 1;
-}
-.container .books .box .imgbox img
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-.container .books .box .content
-{
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  padding: 20px;
-  align-items: flex-end;
-}
-.container .books .box .content h1
-{
-  color: #fff;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 25px;
-  transform: translateY(200px);
-}
-.container .books .box:hover .content h1
-{
-transform: translateY(0);
-transition-delay: 0.6s;
-}
-.container .books .box .content h5
-{
-  color: #fff;
-  transform: translateY(200px);
-  transition: 0.5s;
-  font-size: 14px;
-}
-.container .books .box:hover .content h5
-{
-transform: translateY(0);
-  transition: 0.7s;
-}
+/* Extra styles for the cancel button */
+
+
   </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Frolic City</a>
+    <a class="navbar-brand" href="boot.html">Frolic City</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="boot.html">Home</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -268,27 +200,26 @@ transform: translateY(0);
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    
     <div class="carousel-item active">
-      <img src="books/bookc1.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
+      <img src="games/games1.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-       <div class="beauty">
-        <h5>Sail on a Sea of Books<h5>
-        </div>
+        <div class="beauty">
+        <h5>Get The Best Games</h5>
+        <p>heart of Perfect Gaming.</p></div>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="books/bookc2.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
+      <img src="books/bc1.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Expand your mind, read a book</h5>
-        
+        <h5>Find Your Favourite Books</h5>
+        <p>The collection you will love</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="books/bookc3.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
+      <img src="movie/movies1.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Drop Everything and Read</h5>
-        
+        <h5>Watch fantastic Movies</h5>
+        <p>Adding Fun to your Life.</p>
       </div>
     </div>
   </div>
@@ -303,40 +234,82 @@ transform: translateY(0);
 </div>
 
 
-<div class="container my-md-5">
-  <div class="books">
-  <div class="box">
-    <div class="imgbox">
-      <img src="books/shar.jpg">
+<div class="container my-4">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+          <h3 class="mb-0"><i>Games</i></h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="card-text mb-auto">A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational too.</p>
+          <a href="games.html" class="stretched-link">Go To the World</a>
+        </div>
+        <div class="mix">
+        <div class="col-auto d-none d-lg-block">
+          <img src="games/gamesc.jpg" width="300px" height="300px" class="d-block w-100" alt="...">
+        </div>
+        </div>
+      </div>
     </div>
-    <div class="content">
-      <div>
-        <h1>শার্লক হোমস সমগ্র - ১ </h1>
-        <a href="https://drive.google.com/file/d/19xF-vZh38ztFzN5P5MsajGldIqr_IJAi/view?fbclid=IwAR1sePgIL3rXYGA1FdoBr5KmcfwjeZLOu94a77xpLiBHqjduQJOexoBDxPI"><h5>Read Now</h5></a>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
+          <h3 class="mb-0"><i>Music</i></h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="mb-auto">The music is a jungle of pulsing, echoing sensuality, which is accompanied by the singer's notion of "a dance to the music of time."</p>
+          <a href="music.html" class="stretched-link">Go To the World</a>
+        </div>
+        
+       <div class="mix">
+        <div class="col-auto d-none d-lg-block">
+          <img src="music/music_co.jpeg" width="300px" height="300px" class="d-block w-100" alt="...">
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="box">
-    <div class="imgbox">
-      <img src="books/shar.jpg">
-    </div>
-    <div class="content">
-      <div>
-        <h1>শার্লক হোমস সমগ্র - ২ </h1>
-        <a href="https://drive.google.com/file/d/1A7ngc71b7GqmyKoHvDHVwKVdZbpWFOPw/view?fbclid=IwAR1NwH5hdjFj_pHDiGTjFkljsaTS4SbDSmqh0xJs1lRejYeJVG9-0oR6TRg"><h5>Read Now</h5></a>
-      </div>
-    </div>
-  </div>
-
-   
-   </div>
 </div>
 
+<div class="container">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+         <h3 class="mb-0"><i>Movie</i></h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="card-text mb-auto">Watching a movie in a theater allows you to enjoy technically illustrative audio and be mesmerized by bigger-than-life visuals.</p>
+          <a href="movie.html" class="stretched-link">Go To the World</a>
+        </div>
+        <div class="mix">
+        <div class="col-auto d-none d-lg-block">
+          <img src="movie/movieg.jpeg" width="300px" height="300px" class="d-block w-100" alt="...">
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <!-- <strong class="d-inline-block mb-2 text-success">Design</strong> -->
+          <h3 class="mb-0"><i>Books</i></h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="mb-auto">A book is a medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover.</p>
+          <a href="books.html" class="stretched-link">Go To the World</a>
+        </div>
+        <div class="mix">
+        <div class="col-auto d-none d-lg-block">
+          <img src="books/bc.jpg" width="300px" height="300px" class="d-block w-100" alt="...">
+        </div>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-   
 
 
 <div class="container">
@@ -344,7 +317,7 @@ transform: translateY(0);
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
-            <img class="mb-2" src=" mm.jpg" alt="" width="24" height="24">
+            <img class="mb-2" src="mm.jpg" alt="" width="24" height="24">
             <small class="d-block mb-3 text-muted">© 2017-2018</small>
           </div>
           <div class="col-6 col-md">
