@@ -29,16 +29,80 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
+.container .Games
+{
+  margin-top: 10%;
+}
+.card{
 
-.container .books
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+}
+.card:before{
+position: absolute;
+content: '';
+width: 80%;
+height: 220%;
+background: rgba(30,12,52,0.9);
+top: -50%;
+left: -100%;
+z-index: 1;
+transform: rotate(25deg);
+transform-origin: center top 0;
+transition: .5s;
+}
+.card:hover:before{
+  left: 10%;
+}
+.card img{
+ /* width:100%;
+  height: auto;*/
+  width: 300px;
+  height: 300px;
+}
+.card-text{
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: -100%;
+  color: #fff;
+  left: 0;
+  z-index: 2;
+  transition: 1.1s;
+}
+.card-text h3{
+  font-family: poppins;
+  color: yellow;
+  font-style: bold;
+  font-variant-position: 50;
+
+}
+.card:hover .card-text{
+  top:80px;
+}
+.card-text h4{
+  font-family: poppins;
+  color:yellow;
+  font-weight: 30;
+}  
+.beauty h5
+{
+  color: red;
+}
+/*.container .books
 {
   position: relative;
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
-}
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}*/
 
-.container .books .box
+.container  .box
 {
   position: relative;
   width: 275px;
@@ -47,14 +111,14 @@ input[type=text]:focus, input[type=password]:focus {
   transition: 0.5s;
 }
 
-.container .books .box:hover
+.container  .box:hover
 {
 z-index: 1;
 transform: scale(1.25);
 box-shadow: 0 25px 40px rgba(0,0,0,.5);
 }
 
-.container .books .box .imgbox
+.container .box .imgbox
 {
   position: absolute;
   top: 0;
@@ -63,7 +127,7 @@ box-shadow: 0 25px 40px rgba(0,0,0,.5);
   height: 100%;
 }
 
-.container .books .box .imgbox:before
+.container  .box .imgbox:before
 {
   content: '';
   position: absolute;
@@ -78,11 +142,11 @@ box-shadow: 0 25px 40px rgba(0,0,0,.5);
   opacity: 0;
 
 }
-.container .books .box:hover .imgbox:before
+.container  .box:hover .imgbox:before
 {
   opacity: 1;
 }
-.container .books .box .imgbox img
+.container  .box .imgbox img
 {
   position: absolute;
   top: 0;
@@ -91,9 +155,9 @@ box-shadow: 0 25px 40px rgba(0,0,0,.5);
   height: 300px;
   object-fit: cover;
 }
-.container .books .box .content
+.container  .box .content
 {
-   position: absolute;
+   position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -103,7 +167,7 @@ box-shadow: 0 25px 40px rgba(0,0,0,.5);
   padding: 20px;
   align-items: flex-end;
 }
-.container .books .box .content h1
+.container .box .content h1
 {
   color: #fff;
   transition: 0.5s;
@@ -112,23 +176,24 @@ box-shadow: 0 25px 40px rgba(0,0,0,.5);
   font-size: 25px;
   transform: translateY(200px);
 }
-.container .books .box:hover .content h1
+.container .box:hover .content h1
 {
 transform: translateY(0);
 transition-delay: 0.6s;
 }
-.container .books .box .content h5
+.container  .box .content h5
 {
   color: #fff;
   transform: translateY(200px);
   transition: 0.5s;
   font-size: 14px;
 }
-.container .books .box:hover .content h5
+.container  .box:hover .content h5
 {
 transform: translateY(0);
   transition: 0.7s;
 }
+
   </style>
   </head>
   <body>
@@ -144,7 +209,7 @@ transform: translateY(0);
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -270,7 +335,7 @@ transform: translateY(0);
   <div class="carousel-inner">
     
     <div class="carousel-item active">
-      <img src="books/bookc1.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
+      <img  src="books/bookc1.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
        <div class="beauty">
         <h5>Sail on a Sea of Books<h5>
@@ -278,14 +343,14 @@ transform: translateY(0);
       </div>
     </div>
     <div class="carousel-item">
-      <img src="books/bookc2.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
+      <img  src="books/bookc2.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Expand your mind, read a book</h5>
         
       </div>
     </div>
     <div class="carousel-item">
-      <img src="books/bookc3.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
+      <img  src="books/bookc3.jpg" width="1400px" height="500px" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Drop Everything and Read</h5>
         
@@ -302,10 +367,11 @@ transform: translateY(0);
   </a>
 </div>
 
-
-<div class="container my-md-5">
-  <div class="books">
-  <div class="box">
+<div class="container">
+  <div class="Games">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+     <div class="box">
     <div class="imgbox">
       <img src="books/sat2.jpg">
     </div>
@@ -316,8 +382,9 @@ transform: translateY(0);
       </div>
     </div>
   </div>
-
-  <div class="box">
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="box">
     <div class="imgbox">
       <img src="books/sat2.jpg">
     </div>
@@ -329,7 +396,9 @@ transform: translateY(0);
     </div>
   </div>
 
-  <div class="box">
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box">
     <div class="imgbox">
       <img src="books/kal.jpg">
     </div>
@@ -341,7 +410,11 @@ transform: translateY(0);
     </div>
   </div>
 
-  <div class="box">
+
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="box">
     <div class="imgbox">
       <img src="books/gorvo.jpg">
     </div>
@@ -352,12 +425,10 @@ transform: translateY(0);
       </div>
     </div>
   </div>
-   </div>
-</div>
+      </div>
 
-<div class="container my-md-5">
-  <div class="books">
-  <div class="box">
+    <div class=" col-md-4 col-sm-6">
+     <div class="box">
     <div class="imgbox">
       <img src="books/uttor.jpg">
     </div>
@@ -368,8 +439,9 @@ transform: translateY(0);
       </div>
     </div>
   </div>
-
-  <div class="box">
+</div>
+       <div class="col-md-4 col-sm-6">
+       <div class="box">
     <div class="imgbox">
       <img src="books/orjun1.jpg">
     </div>
@@ -381,7 +453,9 @@ transform: translateY(0);
     </div>
   </div>
 
-  <div class="box">
+      </div>
+      <div class="col-md-4 col-sm-6">
+         <div class="box">
     <div class="imgbox">
       <img src="books/orjun2.jpg">
     </div>
@@ -392,9 +466,215 @@ transform: translateY(0);
       </div>
     </div>
   </div>
+      </div>
 
-  
-   </div>
+      <!-- <div class="col-md-4 col-sm-6">
+        <div class="box">
+    <div class="imgbox">
+      <img src="books/rochona.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>রবীন্দ্র রচনাবলী ২৭ খন্ডে</h1>
+        <a href="https://drive.google.com/drive/u/0/folders/0B56QlKpaAg9fckxqMDNESldEcXM?fbclid=IwAR2TQl0BimKBqQtqTeXe7KuXiIzisefC5-FwcS-aBk83FCyWKMKugtsaYFA"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="box">
+    <div class="imgbox">
+      <img src="books/gita.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>গীতবিতান</h1>
+        <a href="https://drive.google.com/file/d/1MUqzDImwnHsiaM6MMhPn-9Yt1D6rwig5/view?fbclid=IwAR3NFlIwilOldJlygl8YOoBq0qp1LOBkYztMxgltm10RnQkSmOl75ki9Wng"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+
+        </div>
+        <div class="col-md-4 col-sm-6">
+        <div class="box">
+    <div class="imgbox">
+      <img src="books/gitanjoli.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>গীতাঞ্জলি</h1>
+        <a href="https://drive.google.com/file/d/153bovPfLQ1JEi6y3BoTwoIWztmM9lSeq/view?fbclid=IwAR2T8oUTOUw1sQOSQsNxqzZelE3B_c4I74iozjJjYtbRzFVJRA8CXKOeuTc"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+
+        </div> -->
+        <!-- <div class="col-md-4 col-sm-6">
+        <div class="box">
+    <div class="imgbox">
+      <img src="books/kobi.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>কবি</h1>
+        <a href="https://drive.google.com/file/d/101uE-53QNTTHWV7Zpz2648mhUI7XKvN-/view?fbclid=IwAR1nW0DwOkGRTsdYFHQddR5l3uhn_M6etUP9I6NL3oz82U3RI0GBLNbU2hg"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+         <div class="box">
+    <div class="imgbox">
+      <img src="books/debi.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>দেবী</h1>
+        <a href="https://drive.google.com/file/d/1BJy-O9YrORgC0RJ_LJFHPh3q5bARqHsp/view?fbclid=IwAR38R_y-hM3de28lL-NUiRMgeWZpi1SaU21KWPtw6mVJiaIBflt8DiE_DC4"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+
+        </div>
+
+<div class="col-md-4 col-sm-6">
+      <div class="box">
+    <div class="imgbox">
+      <img src="books/nisi.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>নিশীথিনী</h1>
+        <a href="https://drive.google.com/file/d/1EBzKQ8nvp3kiomtlZG8aAK1hK3gyQsXv/view?fbclid=IwAR2TgnrUHuJIdt2rQF8xStAAKd6CSFhSAeKtu4ghHf7XD5ef2ilitJcnO2Q"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img src="books/deyal.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>দেয়াল</h1>
+        <a href="https://drive.google.com/file/d/14pIzVUUAgm7oO783fKXTXdJ-6BA6cJ55/view?fbclid=IwAR3rNM3NfC5U7zERwVx9kf3WYwyyupB5ieqUIIGM7obqIp80Rp8Pg1FMXSE"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+ -->
+<!-- <div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/bonkim.png">
+    </div>
+    <div class="content">
+      <div>
+        <h1>বঙ্কিমচন্দ্র চট্টোপাধ্যায়</h1>
+        <a href="bonkim.html"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/nimai.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>নিমাই ভট্টাচার্য</h1>
+        <a href="nimai.html"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/sek.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>শেক্সপিয়ারসমূহ</h1>
+        <a href="sek.html"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/sher.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>শার্লক হোমস</h1>
+        <a href="sher.html"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/goyenda.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>গোয়েন্দাথ্রিলার রহস্য উপন্যাস</h1>
+        <a href="goyenda.html"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/kazi.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>কাজি নজরুল ইসলাম</h1>
+        <a href="kazi.html"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-4 col-sm-6">
+  <div class="box">
+    <div class="imgbox">
+      <img  src="books/basic.jpeg">
+    </div>
+    <div class="content">
+      <div>
+        <h1>বেসিকআলীসিরিজ</h1>
+        <a href="https://drive.google.com/drive/u/0/folders/152omqacyeEbOuEIichdMUr8XQcsfcV4C?fbclid=IwAR3bN5vi525iqng1cBinPrcPpppK5RMuGi1E3cvxHRbvxIpteKSbDiQt-Sc"><h5>Read Now</h5></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ -->
+    </div>
+  </div>
 </div>
 
 
@@ -442,7 +722,12 @@ transform: translateY(0);
 
     </div>
 
-
+  <script type="text/javascript">
+    $scope.popUpFunction = function () {
+   var popup = document.getElementById("myPopup");
+   popup.classList.toggle("show");
+}
+  </script>
    <script type="text/javascript">
      // Get the modal
 var modal = document.getElementById('id01');
